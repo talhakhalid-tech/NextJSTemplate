@@ -5,12 +5,12 @@ import Sidebar from '@/components/Sidebar';
 import { auth } from '@/app/api/auth/[...nextauth]/route';
 import { AppContextProvider } from '../../context/AppContext';
 import { redirect } from 'next/navigation';
-import HomeContent from './HomeContent';
+import AboutContent from './AboutContent';
 
 /**
- * Home page component.
- * Renders the home content within a sidebar.
- * @returns {JSX.Element} The home page component.
+ * About page component.
+ * Renders the about content within a sidebar.
+ * @returns {JSX.Element} The about page component.
  */
 const page = async () => {
   //  Fetches session data
@@ -24,7 +24,7 @@ const page = async () => {
   return (
     <AppContextProvider>
       <Sidebar>
-        <HomeContent />
+        <AboutContent />
       </Sidebar>
     </AppContextProvider>
   );

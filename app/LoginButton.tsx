@@ -1,7 +1,15 @@
 'use client';
 import { signIn } from 'next-auth/react';
 
+/**
+ * A component that renders a login button to sign in with Google.
+ * @returns {JSX.Element} The login button component.
+ */
 const LoginButton = () => {
+  /**
+   * Handles the login process when the button is clicked.
+   * @returns {void}
+   */
   const handleLogin = () => {
     signIn('google', { callbackUrl: '/home' });
   };
