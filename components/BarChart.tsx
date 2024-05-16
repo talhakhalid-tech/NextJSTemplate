@@ -16,8 +16,8 @@ interface IBarChart {
  * @returns {JSX.Element} The BarChart component.
  */
 const BarChart: React.FC<IBarChart> = ({ data, width, height }) => {
-  const chartContainer = useRef(null); // Reference to the chart canvas
-  const chartInstance = useRef(null); // Reference to the chart instance
+  const chartContainer = useRef(null) as any; // Reference to the chart canvas
+  const chartInstance = useRef(null) as any; // Reference to the chart instance
 
   useEffect(() => {
     // Cleanup previous chart instance if exists
