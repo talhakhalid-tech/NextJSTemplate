@@ -29,18 +29,7 @@ const BarChart: React.FC<IBarChart> = ({ data, width, height }) => {
     const ctx = chartContainer.current.getContext('2d');
     chartInstance.current = new Chart(ctx, {
       type: 'bar',
-      data: data,
-      options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true
-              }
-            }
-          ]
-        }
-      }
+      data: data
     });
 
     return () => {
