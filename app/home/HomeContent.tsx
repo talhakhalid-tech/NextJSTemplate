@@ -220,7 +220,7 @@ const HomeContent = () => {
           />
         </div>
       </div>
-      <BarChart data={chartsData} width="100%" />
+      <BarChart data={chartsData} width="100%" height="auto" />
       <div className="p-2 border rounded border-gray-700 mt-4 mb-2">
         Data Table Filters
         <div className="p-2 gap-y-8 flex flex-col lg:flex-row lg:gap-x-4 lg:items-center">

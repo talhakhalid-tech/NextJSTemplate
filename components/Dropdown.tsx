@@ -7,7 +7,7 @@ interface IDropdown {
   label: string; // Label for the dropdown
   options: { label: string; value: string | number }[]; // Array of dropdown options
   selectedOption: string | number; // Currently selected option
-  setSelectedOption: React.Dispatch<React.SetStateAction<string | number>>; // Function to set the selected option
+  setSelectedOption: Function; // Function to set the selected option
 }
 
 /**
